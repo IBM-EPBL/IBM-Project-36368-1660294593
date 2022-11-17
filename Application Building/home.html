@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Handwritten Digit Recognition</title>
+        <link rel="icon" type="image/svg" sizes="32x32" href="{{url_for('static',filename='images/icon.svg')}}" />
+        <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}" />
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script defer src="{{url_for('static',filename='js/script.js')}}"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="heading">
+                <h1 class="heading__main">Handwritten Digit Recognizer</h1>
+                <h2 class="heading__sub">Easily analyze and detect handwritten digits</h2>
+            </div>
+            <div class="upload-container">
+                <div class="form-wrapper">
+                    <form class="upload" action="/predict" method="post" enctype="multipart/form-data">
+                        <label id="label" for="upload-image"><i data-feather="file-plus"></i>Select File</label>
+                        <input type="file" name="photo" id="upload-image" hidden />
+                        <button type="submit" id="up_btn"></button>
+                    </form>
+                    <img id="loading" src="{{url_for('static',filename='images/loading.gif')}}">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
