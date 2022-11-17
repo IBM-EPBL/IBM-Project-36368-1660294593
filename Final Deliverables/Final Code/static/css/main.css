@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	color: black;
+	font-family: "Overpass", sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+
+.heading {
+	margin-top: -2rem;
+	padding-bottom: 2rem;
+	width: fit-content;
+	text-align: center;
+}
+
+.heading .heading__main {
+	font-size: 3rem;
+	font-weight: 550;
+}
+
+.heading .heading__sub {
+	font-size: 1rem;
+	color: rgb(90, 88, 88);
+}
+
+.upload-container {
+	box-shadow: 0 0 20px rgb(172, 170, 170);
+	width: 40rem;
+	height: 25rem;
+	padding: 1.5rem;
+}
+
+.form-wrapper {
+	background-color: rgba(190, 190, 190, 0.5);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	border: 1px dashed black;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-wrapper #loading {
+	display: none;
+	position: absolute;
+}
+
+.form-wrapper .upload {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 8rem;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	border-radius: 6px;
+	color: white;
+	background-color: rgb(114, 96, 182);
+	box-shadow: 0 5px 10px rgb(146, 135, 247);
+}
+
+.form-wrapper .upload #up_btn {
+	display: none;
+}
+
+.form-wrapper .upload label {
+	font-size: 1rem;
+	font-weight: 600;
+	color: white;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	display: block;
+}
+
+.form-wrapper .upload svg {
+	height: 15px;
+	width: auto;
+	padding-right: 8px;
+	margin-bottom: -2px;
+}
+
+@media screen and (max-width: 700px) {
+	.upload-container {
+		height: 20rem;
+		width: 18rem;
+		margin-top: 3.5rem;
+		margin-bottom: -8rem;
+	}
+
+	.heading .heading__main {
+		margin-top: -6rem;
+		font-size: 2rem;
+		padding-bottom: 1rem;
+	}
+}

@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;600;700;900&display=swap");
+
+body {
+	color: black;
+	font-family: "Overpass", sans-serif;
+}
+
+h1 {
+	padding-top: 2rem;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.result-wrapper {
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	box-shadow: 0 0 10px rgb(126, 125, 125);
+	padding: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-moz-column-gap: 1rem;
+	column-gap: 1rem;
+}
+
+.result-wrapper .input-image-container,
+.result-wrapper .result-container {
+	width: 15rem;
+	height: 15rem;
+	border: 1px dashed black;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(209, 206, 206);
+}
+
+.result-wrapper .input-image-container img {
+	width: 60%;
+	height: 60%;
+	background-color: aqua;
+	background-size: contain;
+}
+
+.result-wrapper .result-container .value {
+	font-size: 6rem;
+}
+
+.result-wrapper .result-container .accuracy {
+	margin-top: -1rem;
+}
+
+.other_predictions {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	column-gap: 1rem;
+	row-gap: 1rem;
+	font-weight: 700;
+}
+
+.other_predictions .value {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 5rem;
+	height: 5rem;
+	box-shadow: 0 0 7px rgb(158, 157, 157);
+}
+
+.other_predictions .value div {
+	margin-top: -1.2rem;
+}
+
+@media screen and (max-width: 700px) {
+	h1 {
+		font-size: 2.3rem;
+	}
+
+	.result-wrapper .input-image-container,
+	.result-wrapper .result-container {
+		width: 7rem;
+		height: 7rem;
+	}
+
+	.result-wrapper .result-container .value {
+		font-size: 4rem;
+	}
+}
